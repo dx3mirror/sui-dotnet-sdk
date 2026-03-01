@@ -1,0 +1,37 @@
+# AI Code Review (free tier via OpenRouter)
+# 1) Add secret: Settings → Secrets → Actions → OPEN_ROUTER_KEY (get free key at https://openrouter.ai)
+# 2) Alternative with no key: install CodeRabbit for free OSS reviews: https://github.com/apps/coderabbit
+
+name: AI Code Review
+
+on:
+  pull_request:
+    branches: [main, master]
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: ai-review-${{ github.repository }}-${{ github.event.pull_request.number || github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: AI Review (DiffGuard + OpenRouter)
+        uses: jonit-dev/diffguard@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          open_router_key: ${{ secrets.OPEN_ROUTER_KEY }}
+          model_id: deepseek/deepseek-chat
+          exclude_files: "*.lock,*.nupkg,bin/**,obj/**,nupkgs/**"
+          minimum_score: 0
