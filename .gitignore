@@ -49,6 +49,11 @@
 *.VC.opendb
 bin
 obj
+nupkgs
+*.dll
+*.pdb
+*.nupkg
+*.snupkg
 
 # Not ignore dev_ops folder
 !dev_ops/*

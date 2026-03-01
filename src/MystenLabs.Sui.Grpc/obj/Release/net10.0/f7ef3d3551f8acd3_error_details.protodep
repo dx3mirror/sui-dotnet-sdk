@@ -1,2 +1,0 @@
-obj\Release\net10.0\google\rpc/ErrorDetails.cs: C:/Users/Admin/.nuget/packages/grpc.tools/2.66.0/build/native/include/google/protobuf/duration.proto\
- D:/SuiDotnet/src/MystenLabs.Sui.Grpc/../../proto/sui-apis/proto/google/rpc/error_details.proto
