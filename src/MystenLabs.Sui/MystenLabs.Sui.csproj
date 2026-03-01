@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>MystenLabs.Sui</RootNamespace>
+    <AssemblyName>MystenLabs.Sui</AssemblyName>
+    <Description>Sui .NET SDK - RPC client, transactions, keypairs. Port of @mysten/sui.</Description>
+    <PackageId>SuiDotnet</PackageId>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>sui.png</PackageIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="README.md" />
+    <None Include="..\..\icon\sui.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MystenLabs.Sui.Bcs\MystenLabs.Sui.Bcs.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\MystenLabs.Sui.Utils\MystenLabs.Sui.Utils.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\MystenLabs.Sui.Grpc\MystenLabs.Sui.Grpc.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\MystenLabs.Sui.GraphQL\MystenLabs.Sui.GraphQL.csproj" PrivateAssets="all" />
+    <PackageReference Include="BouncyCastle.Cryptography" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(OutputPath)MystenLabs.Sui.Bcs.dll" Pack="true" PackagePath="lib\$(TargetFramework)\" Condition="Exists('$(OutputPath)MystenLabs.Sui.Bcs.dll')" />
+    <None Include="$(OutputPath)MystenLabs.Sui.Utils.dll" Pack="true" PackagePath="lib\$(TargetFramework)\" Condition="Exists('$(OutputPath)MystenLabs.Sui.Utils.dll')" />
+    <None Include="$(OutputPath)MystenLabs.Sui.Grpc.dll" Pack="true" PackagePath="lib\$(TargetFramework)\" Condition="Exists('$(OutputPath)MystenLabs.Sui.Grpc.dll')" />
+    <None Include="$(OutputPath)MystenLabs.Sui.GraphQL.dll" Pack="true" PackagePath="lib\$(TargetFramework)\" Condition="Exists('$(OutputPath)MystenLabs.Sui.GraphQL.dll')" />
+  </ItemGroup>
+</Project>

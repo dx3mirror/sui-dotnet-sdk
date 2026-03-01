@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MystenLabs.Sui.Tests</name>
+    </assembly>
+    <members>
+        <member name="M:MystenLabs.Sui.Tests.JsonRpc.SuiRpcClientTests.CreateMockHttpClient(System.Object)">
+            <summary>
+            Returns an HttpClient that always responds with the given JSON-RPC result body (result object only; wrapped in jsonrpc envelope).
+            </summary>
+        </member>
+    </members>
+</doc>

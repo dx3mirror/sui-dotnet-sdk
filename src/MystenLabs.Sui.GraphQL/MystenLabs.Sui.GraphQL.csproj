@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>MystenLabs.Sui.GraphQL</RootNamespace>
+    <AssemblyName>MystenLabs.Sui.GraphQL</AssemblyName>
+    <Description>Sui .NET GraphQL client for the Sui GraphQL RPC (indexer).</Description>
+    <PackageId>MystenLabs.Sui.GraphQL</PackageId>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="GraphQL.Client" />
+    <PackageReference Include="GraphQL.Client.Serializer.SystemTextJson" />
+  </ItemGroup>
+</Project>

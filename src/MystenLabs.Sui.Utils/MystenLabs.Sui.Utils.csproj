@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>MystenLabs.Sui.Utils</RootNamespace>
+    <AssemblyName>MystenLabs.Sui.Utils</AssemblyName>
+    <Description>Shared utilities for MystenLabs.Sui.* (hex, base58, bytes). Port of @mysten/utils.</Description>
+    <PackageId>MystenLabs.Sui.Utils</PackageId>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="SimpleBase" />
+  </ItemGroup>
+</Project>

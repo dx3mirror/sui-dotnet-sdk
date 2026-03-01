@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>MystenLabs.Sui.Bcs</RootNamespace>
+    <AssemblyName>MystenLabs.Sui.Bcs</AssemblyName>
+    <Description>BCS (Binary Canonical Serialization) for Move/Sui. Port of @mysten/bcs.</Description>
+    <PackageId>MystenLabs.Sui.Bcs</PackageId>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MystenLabs.Sui.Utils\MystenLabs.Sui.Utils.csproj" />
+  </ItemGroup>
+</Project>

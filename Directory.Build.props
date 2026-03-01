@@ -1,0 +1,26 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Authors>MystenLabs.Sui port</Authors>
+    <Company>Sui .NET SDK</Company>
+    <Product>Sui .NET SDK</Product>
+    <Version>0.1.0</Version>
+    <PackageVersion>$(Version)</PackageVersion>
+    <RepositoryType>git</RepositoryType>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <!-- NuGet package metadata (for dotnet pack / publish) -->
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/dx3mirror/sui-dotnet-sdk</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dx3mirror/sui-dotnet-sdk</RepositoryUrl>
+    <PackageTags>sui;blockchain;mysten;web3;move;dotnet</PackageTags>
+    <Copyright>Copyright (c) Mysten Labs, Inc. and contributors. Port to .NET.</Copyright>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+</Project>

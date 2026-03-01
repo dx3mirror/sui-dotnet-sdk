@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>MystenLabs.Sui.Tests</RootNamespace>
+    <AssemblyName>MystenLabs.Sui.Tests</AssemblyName>
+    <Description>Unit tests for Sui .NET SDK.</Description>
+    <PackageId>MystenLabs.Sui.Tests</PackageId>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\MystenLabs.Sui\MystenLabs.Sui.csproj" />
+    <ProjectReference Include="..\..\src\MystenLabs.Sui.Bcs\MystenLabs.Sui.Bcs.csproj" />
+    <ProjectReference Include="..\..\src\MystenLabs.Sui.Utils\MystenLabs.Sui.Utils.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+</Project>

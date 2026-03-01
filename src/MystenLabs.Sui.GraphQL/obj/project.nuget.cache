@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "gd41TrUeqiU=",
+  "success": true,
+  "projectFilePath": "D:\\SuiDotnet\\src\\MystenLabs.Sui.GraphQL\\MystenLabs.Sui.GraphQL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\graphql.client\\6.0.2\\graphql.client.6.0.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\graphql.client.abstractions\\6.0.2\\graphql.client.abstractions.6.0.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\graphql.client.abstractions.websocket\\6.0.2\\graphql.client.abstractions.websocket.6.0.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\graphql.client.serializer.systemtextjson\\6.0.2\\graphql.client.serializer.systemtextjson.6.0.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\graphql.primitives\\6.0.2\\graphql.primitives.6.0.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.reactive\\6.0.0\\system.reactive.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

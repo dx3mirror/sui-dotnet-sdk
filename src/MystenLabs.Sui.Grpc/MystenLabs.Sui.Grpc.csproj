@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>MystenLabs.Sui.Grpc</RootNamespace>
+    <AssemblyName>MystenLabs.Sui.Grpc</AssemblyName>
+    <Description>Sui .NET gRPC client for Sui full node (State, Ledger, TransactionExecution). Generated from MystenLabs/sui-apis.</Description>
+    <PackageId>MystenLabs.Sui.Grpc</PackageId>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProtoRoot>$(MSBuildThisFileDirectory)..\..\proto\sui-apis\proto</ProtoRoot>
+    <SuiProtoPath>$(ProtoRoot)\sui\rpc\v2</SuiProtoPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Grpc.Net.Client" />
+    <PackageReference Include="Google.Protobuf" />
+    <PackageReference Include="Grpc.Tools" PrivateAssets="All" IncludeAssets="runtime; build; native; contentfiles; analyzers" />
+  </ItemGroup>
+  <ItemGroup Condition="Exists('$(SuiProtoPath)')">
+    <Protobuf Include="$(ProtoRoot)\google\rpc\*.proto" GrpcServices="None" ProtoRoot="$(ProtoRoot)" />
+    <Protobuf Include="$(SuiProtoPath)\*.proto" GrpcServices="Client" ProtoRoot="$(ProtoRoot)" />
+  </ItemGroup>
+  <Target Name="CheckProtoExists" BeforeTargets="BeforeBuild" Condition="!Exists('$(SuiProtoPath)')">
+    <Error Text="Sui gRPC proto files not found. Run: git submodule add https://github.com/MystenLabs/sui-apis.git proto/sui-apis (see proto/README.md)." />
+  </Target>
+</Project>

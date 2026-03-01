@@ -1,0 +1,16 @@
+obj\Release\net10.0\sui\rpc\v2/SignatureVerificationService.cs \
+obj\Release\net10.0\sui\rpc\v2/SignatureVerificationServiceGrpc.cs: D:/SuiDotnet/src/MystenLabs.Sui.Grpc/../../proto/sui-apis/proto/sui/rpc/v2/bcs.proto\
+ D:/SuiDotnet/src/MystenLabs.Sui.Grpc/../../proto/sui-apis/proto/sui/rpc/v2/jwk.proto\
+ D:/SuiDotnet/src/MystenLabs.Sui.Grpc/../../proto/sui-apis/proto/sui/rpc/v2/signature_scheme.proto\
+ D:/SuiDotnet/src/MystenLabs.Sui.Grpc/../../proto/sui-apis/proto/sui/rpc/v2/signature.proto\
+ C:/Users/Admin/.nuget/packages/grpc.tools/2.66.0/build/native/include/google/protobuf/duration.proto\
+ C:/Users/Admin/.nuget/packages/grpc.tools/2.66.0/build/native/include/google/protobuf/timestamp.proto\
+ D:/SuiDotnet/src/MystenLabs.Sui.Grpc/../../proto/sui-apis/proto/sui/rpc/v2/argument.proto\
+ C:/Users/Admin/.nuget/packages/grpc.tools/2.66.0/build/native/include/google/protobuf/struct.proto\
+ D:/SuiDotnet/src/MystenLabs.Sui.Grpc/../../proto/sui-apis/proto/sui/rpc/v2/input.proto\
+ D:/SuiDotnet/src/MystenLabs.Sui.Grpc/../../proto/sui-apis/proto/sui/rpc/v2/move_package.proto\
+ D:/SuiDotnet/src/MystenLabs.Sui.Grpc/../../proto/sui-apis/proto/sui/rpc/v2/owner.proto\
+ D:/SuiDotnet/src/MystenLabs.Sui.Grpc/../../proto/sui-apis/proto/sui/rpc/v2/object.proto\
+ D:/SuiDotnet/src/MystenLabs.Sui.Grpc/../../proto/sui-apis/proto/sui/rpc/v2/object_reference.proto\
+ D:/SuiDotnet/src/MystenLabs.Sui.Grpc/../../proto/sui-apis/proto/sui/rpc/v2/transaction.proto\
+ D:/SuiDotnet/src/MystenLabs.Sui.Grpc/../../proto/sui-apis/proto/sui/rpc/v2/signature_verification_service.proto

@@ -1,0 +1,2 @@
+obj\Release\net10.0\google\rpc/Status.cs: C:/Users/Admin/.nuget/packages/grpc.tools/2.66.0/build/native/include/google/protobuf/any.proto\
+ D:/SuiDotnet/src/MystenLabs.Sui.Grpc/../../proto/sui-apis/proto/google/rpc/status.proto

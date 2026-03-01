@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MystenLabs.Sui.GraphQL</name>
+    </assembly>
+    <members>
+        <member name="T:MystenLabs.Sui.GraphQL.SuiGraphQLClient">
+            <summary>
+            Sui GraphQL client. Connects to the Sui GraphQL RPC (general-purpose indexer) for typed queries.
+            Beta endpoints: https://graphql.mainnet.sui.io/graphql, https://graphql.testnet.sui.io/graphql.
+            </summary>
+        </member>
+        <member name="F:MystenLabs.Sui.GraphQL.SuiGraphQLClient.DefaultMainnetEndpoint">
+            <summary>
+            Default mainnet GraphQL endpoint.
+            </summary>
+        </member>
+        <member name="F:MystenLabs.Sui.GraphQL.SuiGraphQLClient.DefaultTestnetEndpoint">
+            <summary>
+            Default testnet GraphQL endpoint.
+            </summary>
+        </member>
+        <member name="M:MystenLabs.Sui.GraphQL.SuiGraphQLClient.#ctor(System.String,System.Net.Http.HttpClient)">
+            <summary>
+            Creates a GraphQL client for the given endpoint.
+            </summary>
+            <param name="endpoint">GraphQL endpoint URL (e.g. https://graphql.mainnet.sui.io/graphql).</param>
+            <param name="httpClient">Optional HTTP client; if null, a default one is used.</param>
+        </member>
+        <member name="M:MystenLabs.Sui.GraphQL.SuiGraphQLClient.ExecuteAsync(System.String,System.Object,System.Threading.CancellationToken)">
+            <summary>
+            Executes a GraphQL query (or mutation) and returns the result as a typed response.
+            </summary>
+            <param name="query">GraphQL query/mutation string.</param>
+            <param name="variables">Optional variables (JSON-serializable object).</param>
+            <param name="cancellationToken">Optional cancellation.</param>
+            <returns>GraphQL response with Data and/or Errors.</returns>
+        </member>
+        <member name="M:MystenLabs.Sui.GraphQL.SuiGraphQLClient.ExecuteAsync(GraphQL.GraphQLRequest,System.Threading.CancellationToken)">
+            <summary>
+            Executes a GraphQL query and returns the raw response (Data, Errors, Extensions).
+            </summary>
+            <param name="request">GraphQL request (query + variables).</param>
+            <param name="cancellationToken">Optional cancellation.</param>
+        </member>
+        <member name="M:MystenLabs.Sui.GraphQL.SuiGraphQLClient.Dispose">
+            <summary>
+            Disposes the underlying HTTP client (if owned by this client).
+            </summary>
+        </member>
+    </members>
+</doc>
