@@ -1,7 +1,3 @@
-# AI Code Review (free tier via OpenRouter)
-# 1) Add secret: Settings → Secrets → Actions → OPEN_ROUTER_KEY (get free key at https://openrouter.ai)
-# 2) Alternative with no key: install CodeRabbit for free OSS reviews: https://github.com/apps/coderabbit
-
 name: AI Code Review
 
 on:
